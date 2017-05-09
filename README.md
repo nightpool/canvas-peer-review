@@ -20,7 +20,8 @@ plus anonymous copies of the critiques written about their assignment.
 4. install "cpdf" or download it to the local directory and add it to your path.
 
     https://github.com/coherentgraphics/cpdf-binaries
-    export PATH=.:$PATH
+
+    `export PATH=.:$PATH`
 
 5. run `python collate.py peer_reviews.html`
 
