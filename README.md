@@ -12,10 +12,10 @@ plus anonymous copies of the critiques written about their assignment.
 3. if there are any .docx submissions, convert them to pdf using pdflatex
    and pandoc (needs to be installed seperately)
 
-    ls *.docx | \
-      sed 's/.docx//;s/.*\///'| \
-      xargs -L 1 -I % \
-      pandoc -V fontsize=11pt -V linestretch=1.5 %.docx -o %.pdf
+       ls *.docx | \
+         sed 's/.docx//;s/.*\///'| \
+         xargs -L 1 -I % \
+         pandoc -V fontsize=11pt -V linestretch=1.5 %.docx -o %.pdf
 
 4. install "cpdf" or download it to the local directory and add it to your path.
 
@@ -23,3 +23,5 @@ plus anonymous copies of the critiques written about their assignment.
     export PATH=.:$PATH
 
 5. run `python collate.py peer_reviews.html`
+
+[Licensed under the terms of the GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)

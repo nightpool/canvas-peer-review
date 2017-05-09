@@ -4,6 +4,8 @@ Parses a canvas Peer Review page and collates assignments that were submitted.
 
 Each student will recieve a copy of their own assignment + the critique they wrote,
 plus anonymous copies of the critiques written about their assignment.
+
+Licensed under the terms of the GPLv3
 """
 
 import sys, random, subprocess, os, re
